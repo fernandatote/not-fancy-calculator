@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  background-color: #F5F5F5;
+}
+
+#wrapper {
+  max-width: 600px;
+}
+
+a {
+  text-decoration: none;
+  color: #343a40;
+}
+a:hover {
+  color: #343a40;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.calculator {
+  background-color: #FF5858;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.calculator .result {
+  background-color: #F5F5F5;
+  height: 50px;
+  width: 100%;
+  font-size: 2em;
+  border-radius: 5px;
+  text-align: right;
+  line-height: 50px;
+}
+
+.calculator .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  margin-top: 15px;
+}
+
+.calculator button.lg-btn {
+    grid-column: 1 / span 3;
+}
+
+#social {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 520px) {
+  #social {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
